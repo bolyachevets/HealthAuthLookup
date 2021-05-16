@@ -34,11 +34,11 @@ services:
         tmpfs:
           size: 128000000
     ports:
-      - 8101:8101
+      - 8888:8888
     depends_on:
       - api
     environment:
-      PORT: 8101
+      PORT: 8888
       NODE_ENV: development
     command: >
       bash -c "npm start"
@@ -73,8 +73,8 @@ services:
       context: db/
       dockerfile: Dockerfile
     volumes:
-      - type: bind
-        source: ./pg_data
+      - type: volume
+        source: pg_data
         target: /var/lib/postgresql/data
       - type: bind
         source: ./db
@@ -85,18 +85,18 @@ services:
     healthcheck:
       test:
         [
-          "CMD",
-          "psql",
-          "-U",
-          "${APP_DB_USER}",
-          "-h",
-          "localhost",
-          "-d",
-          "${APP_DB_NAME}",
-          "-p",
-          "5432",
-          "-c",
-          "SELECT 1 AS result FROM pg_database WHERE datname='${APP_DB_NAME}'",
+            "CMD",
+            "psql",
+            "-U",
+            "${APP_DB_USER}",
+            "-h",
+            "localhost",
+            "-d",
+            "${APP_DB_NAME}",
+            "-p",
+            "5432",
+            "-c",
+            "SELECT 1 AS result FROM pg_database WHERE datname='${APP_DB_NAME}'",
         ]
       interval: 30s
       timeout: 10s
@@ -112,3 +112,5 @@ services:
     depends_on:
       - postgres
     environment: *defaults
+volumes:
+  pg_data:
