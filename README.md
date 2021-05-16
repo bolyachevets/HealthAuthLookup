@@ -40,13 +40,29 @@ See [DB README](db/README.md)
 
 ---
 
-### TODO 
+### Technical Architecture Diagram 
 
-Due to a quick turnaround, these items are yet to be mature:
-- unit tests coverage for both api and web component
-- There is a severity vulnerability issue reported from `npm audit` - the issue is yet to be resolved.
-- modify Docker persistent volume strategy
-- create a Technical architecture diagram
++-------------------+
+|                   |
+|     Client        |
+|                   |
++-------^----+------+
+        |    |
+        |    |
+        |    |
++-------+----v-------+
+|                    |
+|   Web Component    |
+|                    |
++-------^----+-------+
+        |    |
+        |    |
+        |    |
++-------+----v-------+     +------------------+
+|                    +----->                  |
+|  API Component     |     |  DB Component    |
+|                    <-----+                  |
++--------------------+     +------------------+
 
 ### Future Roadmap
 TODO
