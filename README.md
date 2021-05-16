@@ -42,7 +42,7 @@ See [DB README](db/README.md)
 
 ### Technical Architecture Diagram 
 
-<img width="518" alt="Technical Architecture Diagram" src="https://user-images.githubusercontent.com/22973013/118388013-a9b87900-b5d6-11eb-8075-8feacdee8988.png">
+<img width="654" alt="Diagram" src="https://user-images.githubusercontent.com/22973013/118390783-c8723c00-b5e5-11eb-8969-c539f21d722b.png">
 
 ### Future Roadmap
 TODO
