@@ -42,27 +42,7 @@ See [DB README](db/README.md)
 
 ### Technical Architecture Diagram 
 
-+-------------------+
-|                   |
-|     Client        |
-|                   |
-+-------^----+------+
-        |    |
-        |    |
-        |    |
-+-------+----v-------+
-|                    |
-|   Web Component    |
-|                    |
-+-------^----+-------+
-        |    |
-        |    |
-        |    |
-+-------+----v-------+     +------------------+
-|                    +----->                  |
-|  API Component     |     |  DB Component    |
-|                    <-----+                  |
-+--------------------+     +------------------+
+<img width="518" alt="Technical Architecture Diagram" src="https://user-images.githubusercontent.com/22973013/118388013-a9b87900-b5d6-11eb-8075-8feacdee8988.png">
 
 ### Future Roadmap
 TODO
