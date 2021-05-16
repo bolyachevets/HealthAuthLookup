@@ -45,4 +45,6 @@ See [DB README](db/README.md)
 <img width="654" alt="Diagram" src="https://user-images.githubusercontent.com/22973013/118390783-c8723c00-b5e5-11eb-8969-c539f21d722b.png">
 
 ### Future Roadmap
-TODO
+
+- Add API Gateway such as Kong, which in addition to abstracting interface from implementation can provide security/analytics/monitoring services (e.g., rate limiting, load balancing, logging, caching).
+- Use Cassandra DB for logging (only requires 'eventual consistency' and benefits from fast writes).
