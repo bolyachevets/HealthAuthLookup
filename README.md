@@ -29,7 +29,7 @@ Run `docker-compose up` at project root path.
 Visit http://localhost:8888 via a web browser.
 
 If you wish to skip web ui and directly interact with api,\
-the service is at http://localhost: 8888 and REST endpoint description can be found in [open api doc](api/public/doc/api/index.html)\
+the service is at http://localhost:8888 and REST endpoint description can be found in [open api doc](api/public/doc/api/index.html)\
 (need to open the html in a browser).
 
 ---
@@ -45,6 +45,7 @@ See [DB README](db/README.md)
 <img width="654" alt="Diagram" src="https://user-images.githubusercontent.com/22973013/118390783-c8723c00-b5e5-11eb-8969-c539f21d722b.png">
 
 ### Future Roadmap
-
-- Add API Gateway such as Kong, which in addition to abstracting interface from implementation can provide security/analytics/monitoring services (e.g., rate limiting, load balancing, logging, caching).
+- Enable SSL for docker containers.
+- Verify cross platform and cross browser compatibility.
+- Add API Gateway (e.g. Kong), which in addition to abstracting interface from implementation can provide security/analytics/monitoring services (e.g., rate limiting, load balancing, logging, caching).
 - Use Cassandra DB for logging (only requires 'eventual consistency' and benefits from fast writes).
