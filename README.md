@@ -42,10 +42,11 @@ See [DB README](db/README.md)
 
 ### Technical Architecture Diagram 
 
-<img width="654" alt="Diagram" src="https://user-images.githubusercontent.com/22973013/118390783-c8723c00-b5e5-11eb-8969-c539f21d722b.png">
+<img width="600" alt="architecture-diagram" src="https://user-images.githubusercontent.com/22973013/118410916-c7bdc200-b646-11eb-8e01-170889b54d78.png">
 
 ### Future Roadmap
 - Enable SSL for docker containers.
 - Verify cross platform and cross browser compatibility.
-- Add API Gateway (e.g. Kong), which in addition to abstracting interface from implementation can provide security/analytics/monitoring services (e.g., rate limiting, load balancing, logging, caching).
+- Develop and implement accessibility strategy (e.g., add "alt text" to fields to enable blind users)
+- Add an API Gateway (e.g. Kong), which in addition to abstracting interface from implementation can provide security/analytics/monitoring services (e.g., rate limiting, load balancing, insulation via reverse proxy, logging, caching).
 - Use Cassandra DB for logging (only requires 'eventual consistency' and benefits from fast writes).
