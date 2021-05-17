@@ -5,6 +5,12 @@
     vars:
       project_path: "{{ playbook_dir }}/.."
     tasks:
+    - name: Remove stoped docker containers
+      shell: |
+        docker container prune -f;
+    - name: Remove unused volumes
+      shell: |
+        docker volume prune -f;
     - name: Set up ENV file at root path...
       block:
       - name: Delete any existing env file
