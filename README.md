@@ -47,6 +47,6 @@ See [DB README](db/README.md)
 ### Future Roadmap
 - Enable SSL for docker containers.
 - Verify cross platform and cross browser compatibility.
-- Develop and implement accessibility strategy (e.g., add "alt text" to fields to enable blind users)
+- Verify usability for assistive technology users
 - Add an API Gateway (e.g. Kong), which in addition to abstracting interface from implementation can provide security/analytics/monitoring services (e.g., rate limiting, load balancing, insulation via reverse proxy, logging, caching).
 - Use Cassandra DB for logging (only requires 'eventual consistency' and benefits from fast writes).
