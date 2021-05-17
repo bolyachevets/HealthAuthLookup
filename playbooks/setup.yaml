@@ -5,7 +5,7 @@
     vars:
       project_path: "{{ playbook_dir }}/.."
     tasks:
-    - name: Remove stoped docker containers
+    - name: Remove stopped docker containers
       shell: |
         docker container prune -f;
     - name: Remove unused volumes
